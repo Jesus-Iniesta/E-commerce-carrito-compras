@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './product-detail.component.html',
   styles: ``
 })
-export class ProductDetailComponent {
+export default class ProductDetailComponent {
+  constructor() {
+    // Initialization logic can go here
+  }
 
+  initializeComponent() {
+    // Component initialization logic
+    console.log('ProductDetailComponent initialized');
+
+  }
 }

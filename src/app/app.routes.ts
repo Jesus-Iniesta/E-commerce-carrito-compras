@@ -2,12 +2,12 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: 'productos',
+        path: '',
         loadChildren: () =>
-         import('./productos/features/product-shell/product.route'),
+            import('./productos/features/product-shell/product.route'),
     },
     {
         path: '**',
-        redirectTo: 'productos',
+        redirectTo: '',
     }
 ];
