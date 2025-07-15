@@ -1,3 +1,47 @@
-@taildwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  color-scheme: dark light;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Estilos para navegación */
+.no-underline, 
+nav a {
+  text-decoration: none !important;
+}
+
+nav a:hover {
+  text-decoration: none !important;
+}
+
+/* Mejorar la visualización de imágenes en las tarjetas */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* Estilos para transiciones suaves */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Responsive utilities adicionales */
+@media (max-width: 480px) {
+  .text-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .card-padding {
+    padding: 1rem;
+  }
+  
+  .btn-mobile {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+}
